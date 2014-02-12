@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="9.1" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13B42" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="AudioClip" representedClassName="RadioManagedAudioClip" parentEntity="Track" syncable="YES">
+        <attribute name="asset_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="is_skippable" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="purchase_id" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="DatabaseProperty" representedClassName="NSManagedObject" syncable="YES">
+        <attribute name="key" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Revision" representedClassName="RadioRevision" syncable="YES">
+        <attribute name="revision_id" attributeType="Integer 64" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="revision_type" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="station_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="SkipHistory" representedClassName="RadioManagedSkipHistory" syncable="YES">
+        <attribute name="skip_identifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="skip_timestamps" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="station_hash" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="station_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Station" representedClassName="RadioManagedStation" syncable="YES">
+        <attribute name="ad_data" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="adam_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="additional_referenced_track_descriptors_data" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="artwork_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="artwork_url_data" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="core_seed_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="current_playing_track_descriptor" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="current_playing_track_time" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="debug_dictionary" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="edit_enabled" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="editable_fields" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="impression_threshold" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="is_featured" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="is_gateway_video_ad_enabled" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="is_premium_placement" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="is_shared" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="is_sponsored" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="is_subscribed" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="likes_enabled" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="listeners" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ordered_track_descriptors_data" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="persistent_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="seed_tracks" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="share_token" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sharing_enabled" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="skip_enabled" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="skip_frequency" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="skip_identifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="skip_interval" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="skip_timestamps" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="song_mix_type" optional="YES" attributeType="Integer 32" defaultValueString="1" syncable="YES"/>
+        <attribute name="sort_order" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="station_description" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="station_hash" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="station_id" attributeType="Integer 64" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="stream_certificate_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stream_key_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stream_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="track_descriptors_by_expiration_date_dictionary" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="tracks_need_refresh" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="virtual_play_enabled" optional="YES" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+    </entity>
+    <entity name="Track" representedClassName="RadioManagedTrack" syncable="YES">
+        <attribute name="ad_data" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="after_promo_clip_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="album" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="album_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="album_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="artist" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="artwork_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="artwork_url_data" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="before_promo_clip_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="copyright_text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date_added" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="date_fetched" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="debug_dictionary" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="debug_message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="in_wish_list" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="is_explicit" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="like_value" optional="YES" attributeType="Integer 32" syncable="YES"/>
+        <attribute name="offer_action_text_long" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="offer_action_text_medium" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="offer_action_text_short" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="offer_buy_params" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="offer_formatted_price" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="offer_price" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="offer_type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="preview_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="promo_content_dictionary" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="shuffle_seed" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="store_id" attributeType="Integer 64" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wish_list_date" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <entity name="TrackHistory" representedClassName="RadioManagedTrackHistory" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="station_hash" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="station_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="station_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="track_store_id" attributeType="Integer 64" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="TrackHistory" positionX="160" positionY="192" width="128" height="30"/>
+        <element name="DatabaseProperty" positionX="160" positionY="192" width="128" height="30"/>
+        <element name="Track" positionX="160" positionY="192" width="128" height="30"/>
+        <element name="Revision" positionX="160" positionY="192" width="128" height="30"/>
+        <element name="Station" positionX="160" positionY="192" width="128" height="30"/>
+        <element name="AudioClip" positionX="160" positionY="192" width="128" height="30"/>
+        <element name="SkipHistory" positionX="160" positionY="192" width="128" height="30"/>
+    </elements>
+</model>

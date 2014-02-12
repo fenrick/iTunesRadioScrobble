@@ -1,0 +1,47 @@
+PODS:
+  - AFNetworking (2.1.0):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+    - AFNetworking/UIKit
+  - AFNetworking/NSURLConnection (2.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.1.0):
+    - AFNetworking/NSURLConnection
+  - AFNetworking/Reachability (2.1.0)
+  - AFNetworking/Security (2.1.0)
+  - AFNetworking/Serialization (2.1.0)
+  - CocoaLumberjack (1.8.0):
+    - CocoaLumberjack/Extensions
+  - CocoaLumberjack/Core (1.8.0)
+  - CocoaLumberjack/Extensions (1.8.0):
+    - CocoaLumberjack/Core
+  - KissXML (5.0)
+  - LastFm (1.15.0):
+    - KissXML (~> 5.0)
+  - MagicalRecord (2.2):
+    - MagicalRecord/Core
+  - MagicalRecord/Core (2.2)
+  - ObjectiveSugar (1.1.0)
+
+DEPENDENCIES:
+  - AFNetworking
+  - CocoaLumberjack
+  - KissXML
+  - LastFm
+  - MagicalRecord
+  - ObjectiveSugar
+
+SPEC CHECKSUMS:
+  AFNetworking: c7d7901a83f631414c7eda1737261f696101a5cd
+  CocoaLumberjack: 6ed94046d2ca7fde03a73b3d01b8cfc56574b314
+  KissXML: 4c66b6f39ef49c23e6bb8d335b94136f12b1b615
+  LastFm: f474e3d5a6119cda5a338d028420ad69a908deab
+  MagicalRecord: 95d49d74ef752cd52f6ad87bcb474817fc3978cf
+  ObjectiveSugar: fed588577bcf9733546aeaa089de444e4bab9a52
+
+COCOAPODS: 0.29.0

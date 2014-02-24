@@ -1,0 +1,37 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+    #import <Foundation/Foundation.h>
+    #import <ObjectiveSugar/ObjectiveSugar.h>
+    #import "GVUserDefaults+Properties.h"
+#import "Globals.h"
+#import <DDLog.h>
+#endif
+
+// DLog is a better NSLog
+#if defined (CONFIGURATION_Release)
+static const int ddLogLevel = LOG_LEVEL_ERROR;
+#else
+static const int ddLogLevel = LOG_LEVEL_VERBOSE;
+#endif
+
+
+// Handy shortcuts
+#define ApplicationDelegate                 ((AppDelegate *)[[UIApplication sharedApplication] delegate])
+#define UserDefaults                        [GVUserDefaults standardUserDefaults]
+#define NotificationCenter                  [NSNotificationCenter defaultCenter]
+#define SharedApplication                   [UIApplication sharedApplication]
+#define MainBundle                          [NSBundle mainBundle]
+#define MainScreen                          [UIScreen mainScreen]
+#define ShowNetworkActivityIndicator()      [[SDNetworkActivityIndicator sharedActivityIndicator] startActivity]
+#define HideNetworkActivityIndicator()      [[SDNetworkActivityIndicator sharedActivityIndicator] stopActivity]
+#define IsPhone                             ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
+#define IsPortrait                          UIInterfaceOrientationIsPortrait(SharedApplication.statusBarOrientation)
+

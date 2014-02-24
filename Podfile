@@ -1,8 +1,11 @@
 platform :osx, "10.9"
 
-pod 'CocoaLumberjack'
-pod 'AFNetworking'
+
 pod 'ObjectiveSugar'
+pod 'AFNetworking'
+pod 'GVUserDefaults'
+pod 'CocoaLumberjack'
 pod 'LastFm'
 pod 'KissXML'
 pod 'MagicalRecord'
+pod 'RemoteConfig'

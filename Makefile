@@ -6,7 +6,7 @@ createtag:
 
 makenotes:
 	git log --pretty=format:'* %s [%an]' --abbrev-commit --dense --no-merges --reverse ...`git for-each-ref --sort=-taggerdate --format='%(refname:short)' refs/tags --count 2 | cut -f2 | sed -n 2p` > notes.md
-	mate notes.md # gives you the option to edit the release notes, filter out any nonsense
+	vi notes.md # gives you the option to edit the release notes, filter out any nonsense
 
 	# Save notes into changelog
 	echo "`git for-each-ref --sort=-taggerdate --format='%(refname:short)' refs/tags --count 1` (`date +"%Y-%m-%d %H:%M"`)" >> temp_changelog.md

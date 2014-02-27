@@ -39,6 +39,18 @@
 		B00071E118BACAA600BB0C19 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B007DB9118BAC6CC009B6639 /* Credits.rtf */; };
 		B061FD7018ADD63C0002CF2D /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B061FD6F18ADD63C0002CF2D /* AppKit.framework */; };
 		B0DDC06718BEFA1D009E9944 /* Radio.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B0DDC06518BEFA1D009E9944 /* Radio.xcdatamodeld */; };
+		B0DDC08318BEFBD5009E9944 /* _RadioManagedAudioClip.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DDC06C18BEFBD5009E9944 /* _RadioManagedAudioClip.m */; };
+		B0DDC08418BEFBD5009E9944 /* _RadioManagedSkipHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DDC06E18BEFBD5009E9944 /* _RadioManagedSkipHistory.m */; };
+		B0DDC08518BEFBD5009E9944 /* _RadioManagedStation.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DDC07018BEFBD5009E9944 /* _RadioManagedStation.m */; };
+		B0DDC08618BEFBD5009E9944 /* _RadioManagedTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DDC07218BEFBD5009E9944 /* _RadioManagedTrack.m */; };
+		B0DDC08718BEFBD5009E9944 /* _RadioManagedTrackHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DDC07418BEFBD5009E9944 /* _RadioManagedTrackHistory.m */; };
+		B0DDC08818BEFBD5009E9944 /* _RadioRevision.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DDC07618BEFBD5009E9944 /* _RadioRevision.m */; };
+		B0DDC08918BEFBD5009E9944 /* RadioManagedAudioClip.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DDC07818BEFBD5009E9944 /* RadioManagedAudioClip.m */; };
+		B0DDC08A18BEFBD5009E9944 /* RadioManagedSkipHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DDC07A18BEFBD5009E9944 /* RadioManagedSkipHistory.m */; };
+		B0DDC08B18BEFBD5009E9944 /* RadioManagedStation.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DDC07C18BEFBD5009E9944 /* RadioManagedStation.m */; };
+		B0DDC08C18BEFBD5009E9944 /* RadioManagedTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DDC07E18BEFBD5009E9944 /* RadioManagedTrack.m */; };
+		B0DDC08D18BEFBD5009E9944 /* RadioManagedTrackHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DDC08018BEFBD5009E9944 /* RadioManagedTrackHistory.m */; };
+		B0DDC08E18BEFBD5009E9944 /* RadioRevision.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DDC08218BEFBD5009E9944 /* RadioRevision.m */; };
 		B0E9985F18BAC2F50068191C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E9985E18BAC2F50068191C /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +104,30 @@
 		B007DB9818BAC6CC009B6639 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		B061FD6F18ADD63C0002CF2D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		B0DDC06618BEFA1D009E9944 /* Radio.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Radio.xcdatamodel; sourceTree = "<group>"; };
+		B0DDC06B18BEFBD5009E9944 /* _RadioManagedAudioClip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _RadioManagedAudioClip.h; sourceTree = "<group>"; };
+		B0DDC06C18BEFBD5009E9944 /* _RadioManagedAudioClip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _RadioManagedAudioClip.m; sourceTree = "<group>"; };
+		B0DDC06D18BEFBD5009E9944 /* _RadioManagedSkipHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _RadioManagedSkipHistory.h; sourceTree = "<group>"; };
+		B0DDC06E18BEFBD5009E9944 /* _RadioManagedSkipHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _RadioManagedSkipHistory.m; sourceTree = "<group>"; };
+		B0DDC06F18BEFBD5009E9944 /* _RadioManagedStation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _RadioManagedStation.h; sourceTree = "<group>"; };
+		B0DDC07018BEFBD5009E9944 /* _RadioManagedStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _RadioManagedStation.m; sourceTree = "<group>"; };
+		B0DDC07118BEFBD5009E9944 /* _RadioManagedTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _RadioManagedTrack.h; sourceTree = "<group>"; };
+		B0DDC07218BEFBD5009E9944 /* _RadioManagedTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _RadioManagedTrack.m; sourceTree = "<group>"; };
+		B0DDC07318BEFBD5009E9944 /* _RadioManagedTrackHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _RadioManagedTrackHistory.h; sourceTree = "<group>"; };
+		B0DDC07418BEFBD5009E9944 /* _RadioManagedTrackHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _RadioManagedTrackHistory.m; sourceTree = "<group>"; };
+		B0DDC07518BEFBD5009E9944 /* _RadioRevision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _RadioRevision.h; sourceTree = "<group>"; };
+		B0DDC07618BEFBD5009E9944 /* _RadioRevision.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _RadioRevision.m; sourceTree = "<group>"; };
+		B0DDC07718BEFBD5009E9944 /* RadioManagedAudioClip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioManagedAudioClip.h; sourceTree = "<group>"; };
+		B0DDC07818BEFBD5009E9944 /* RadioManagedAudioClip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioManagedAudioClip.m; sourceTree = "<group>"; };
+		B0DDC07918BEFBD5009E9944 /* RadioManagedSkipHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioManagedSkipHistory.h; sourceTree = "<group>"; };
+		B0DDC07A18BEFBD5009E9944 /* RadioManagedSkipHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioManagedSkipHistory.m; sourceTree = "<group>"; };
+		B0DDC07B18BEFBD5009E9944 /* RadioManagedStation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioManagedStation.h; sourceTree = "<group>"; };
+		B0DDC07C18BEFBD5009E9944 /* RadioManagedStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioManagedStation.m; sourceTree = "<group>"; };
+		B0DDC07D18BEFBD5009E9944 /* RadioManagedTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioManagedTrack.h; sourceTree = "<group>"; };
+		B0DDC07E18BEFBD5009E9944 /* RadioManagedTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioManagedTrack.m; sourceTree = "<group>"; };
+		B0DDC07F18BEFBD5009E9944 /* RadioManagedTrackHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioManagedTrackHistory.h; sourceTree = "<group>"; };
+		B0DDC08018BEFBD5009E9944 /* RadioManagedTrackHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioManagedTrackHistory.m; sourceTree = "<group>"; };
+		B0DDC08118BEFBD5009E9944 /* RadioRevision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioRevision.h; sourceTree = "<group>"; };
+		B0DDC08218BEFBD5009E9944 /* RadioRevision.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioRevision.m; sourceTree = "<group>"; };
 		B0E9985E18BAC2F50068191C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -217,6 +253,19 @@
 		0AB8C9AE18854E2700117769 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B0DDC06A18BEFBD5009E9944 /* Machine */,
+				B0DDC07718BEFBD5009E9944 /* RadioManagedAudioClip.h */,
+				B0DDC07818BEFBD5009E9944 /* RadioManagedAudioClip.m */,
+				B0DDC07918BEFBD5009E9944 /* RadioManagedSkipHistory.h */,
+				B0DDC07A18BEFBD5009E9944 /* RadioManagedSkipHistory.m */,
+				B0DDC07B18BEFBD5009E9944 /* RadioManagedStation.h */,
+				B0DDC07C18BEFBD5009E9944 /* RadioManagedStation.m */,
+				B0DDC07D18BEFBD5009E9944 /* RadioManagedTrack.h */,
+				B0DDC07E18BEFBD5009E9944 /* RadioManagedTrack.m */,
+				B0DDC07F18BEFBD5009E9944 /* RadioManagedTrackHistory.h */,
+				B0DDC08018BEFBD5009E9944 /* RadioManagedTrackHistory.m */,
+				B0DDC08118BEFBD5009E9944 /* RadioRevision.h */,
+				B0DDC08218BEFBD5009E9944 /* RadioRevision.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -277,6 +326,25 @@
 				B007DB8718BAC6CB009B6639 /* Foundation.framework */,
 			);
 			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		B0DDC06A18BEFBD5009E9944 /* Machine */ = {
+			isa = PBXGroup;
+			children = (
+				B0DDC06B18BEFBD5009E9944 /* _RadioManagedAudioClip.h */,
+				B0DDC06C18BEFBD5009E9944 /* _RadioManagedAudioClip.m */,
+				B0DDC06D18BEFBD5009E9944 /* _RadioManagedSkipHistory.h */,
+				B0DDC06E18BEFBD5009E9944 /* _RadioManagedSkipHistory.m */,
+				B0DDC06F18BEFBD5009E9944 /* _RadioManagedStation.h */,
+				B0DDC07018BEFBD5009E9944 /* _RadioManagedStation.m */,
+				B0DDC07118BEFBD5009E9944 /* _RadioManagedTrack.h */,
+				B0DDC07218BEFBD5009E9944 /* _RadioManagedTrack.m */,
+				B0DDC07318BEFBD5009E9944 /* _RadioManagedTrackHistory.h */,
+				B0DDC07418BEFBD5009E9944 /* _RadioManagedTrackHistory.m */,
+				B0DDC07518BEFBD5009E9944 /* _RadioRevision.h */,
+				B0DDC07618BEFBD5009E9944 /* _RadioRevision.m */,
+			);
+			path = Machine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -450,11 +518,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AB8C9C418854E2700117769 /* main.m in Sources */,
+				B0DDC08418BEFBD5009E9944 /* _RadioManagedSkipHistory.m in Sources */,
+				B0DDC08318BEFBD5009E9944 /* _RadioManagedAudioClip.m in Sources */,
+				B0DDC08618BEFBD5009E9944 /* _RadioManagedTrack.m in Sources */,
+				B0DDC08E18BEFBD5009E9944 /* RadioRevision.m in Sources */,
 				B0DDC06718BEFA1D009E9944 /* Radio.xcdatamodeld in Sources */,
 				0AB8C9CA18854ED600117769 /* Config.m in Sources */,
+				B0DDC08518BEFBD5009E9944 /* _RadioManagedStation.m in Sources */,
 				0AB8C9D218858C8C00117769 /* Utils.m in Sources */,
+				B0DDC08D18BEFBD5009E9944 /* RadioManagedTrackHistory.m in Sources */,
+				B0DDC08818BEFBD5009E9944 /* _RadioRevision.m in Sources */,
 				0AB8C9BF18854E2700117769 /* AppDelegate.m in Sources */,
+				B0DDC08918BEFBD5009E9944 /* RadioManagedAudioClip.m in Sources */,
+				B0DDC08718BEFBD5009E9944 /* _RadioManagedTrackHistory.m in Sources */,
 				0AB8C9C718854E9100117769 /* GVUserDefaults+Properties.m in Sources */,
+				B0DDC08A18BEFBD5009E9944 /* RadioManagedSkipHistory.m in Sources */,
+				B0DDC08B18BEFBD5009E9944 /* RadioManagedStation.m in Sources */,
+				B0DDC08C18BEFBD5009E9944 /* RadioManagedTrack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

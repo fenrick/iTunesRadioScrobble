@@ -14,11 +14,13 @@
 #pragma mark - Singleton
 
 + (Config *)sharedInstance {
-    static dispatch_once_t pred;
+    static dispatch_once_t onceToken;
     static Config *sharedInstance = nil;
-    dispatch_once(&pred, ^{
+
+    dispatch_once(&onceToken, ^{
         sharedInstance = [[self alloc] init];
     });
+
     return sharedInstance;
 }
 

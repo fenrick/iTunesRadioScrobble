@@ -24,9 +24,9 @@ PODS:
   - KissXML (5.0)
   - LastFm (1.15.0):
     - KissXML (~> 5.0)
-  - MagicalRecord (2.2):
-    - MagicalRecord/Core
-  - MagicalRecord/Core (2.2)
+  - MagicalRecord (3.0):
+    - MagicalRecord/Shorthand
+  - MagicalRecord/Shorthand (3.0)
   - ObjectiveSugar (1.1.0)
 
 DEPENDENCIES:
@@ -44,7 +44,7 @@ SPEC CHECKSUMS:
   GVUserDefaults: 50dbc9e24ab41b0c24bda7af8b5944ad0413dd2a
   KissXML: 4c66b6f39ef49c23e6bb8d335b94136f12b1b615
   LastFm: f474e3d5a6119cda5a338d028420ad69a908deab
-  MagicalRecord: 95d49d74ef752cd52f6ad87bcb474817fc3978cf
+  MagicalRecord: cfe8f3ce55a2240ea1f643469184e53eb302a53f
   ObjectiveSugar: fed588577bcf9733546aeaa089de444e4bab9a52
 
 COCOAPODS: 0.29.0

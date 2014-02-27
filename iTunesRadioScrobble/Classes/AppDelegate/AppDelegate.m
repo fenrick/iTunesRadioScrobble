@@ -49,9 +49,13 @@
 }
 
 - (void)applicationWillFinishLaunching:(NSNotification *)notification {
+    // increment run counter
     [UserDefaults increaseNumberOfAppStarts];
     
+    // setup URL caching
     [self setupURLCaching];
+    
+    // test internet connectivity
     [self setupReachability];
 }
 

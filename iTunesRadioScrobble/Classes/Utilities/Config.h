@@ -2,7 +2,7 @@
 //  Config.h
 //  iTunesRadioScrobble
 //
-//  Created by s770439 on 14-01-14.
+//  Created by Jolyon Suthers on 14-01-14.
 //  Copyright (c) 2014 Jolyon Suthers. All rights reserved.
 //
 

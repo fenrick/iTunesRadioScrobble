@@ -2,7 +2,7 @@
 //  main.m
 //  iTunesRadioScrobble
 //
-//  Created by s770439 on 14-02-2014.
+//  Created by Jolyon Suthers on 14/02/2014.
 //  Copyright (c) 2014 Jolyon Suthers. All rights reserved.
 //
 

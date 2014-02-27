@@ -8,3 +8,7 @@ pod 'CocoaLumberjack'
 pod 'LastFm'
 pod 'KissXML'
 pod 'MagicalRecord'
+
+target :Tests, :exclusive => true do
+    pod 'Expecta'
+end

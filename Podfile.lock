@@ -20,6 +20,7 @@ PODS:
   - CocoaLumberjack/Core (1.8.1)
   - CocoaLumberjack/Extensions (1.8.1):
     - CocoaLumberjack/Core
+  - Expecta (0.2.3)
   - GVUserDefaults (0.9.4)
   - KissXML (5.0)
   - LastFm (1.15.0):
@@ -32,6 +33,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - CocoaLumberjack
+  - Expecta
   - GVUserDefaults
   - KissXML
   - LastFm
@@ -41,6 +43,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: e8cfd8f3fe3bfe19124a0cc63f4d45752d892a56
   CocoaLumberjack: 020378ec400d658923bf5887178394f65f052c90
+  Expecta: dbc4a27fabb853bdd2e907e33f11ee43a9a47d0c
   GVUserDefaults: 50dbc9e24ab41b0c24bda7af8b5944ad0413dd2a
   KissXML: 4c66b6f39ef49c23e6bb8d335b94136f12b1b615
   LastFm: f474e3d5a6119cda5a338d028420ad69a908deab

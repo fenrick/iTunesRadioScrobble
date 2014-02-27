@@ -51,6 +51,7 @@
 		B0DDC08D18BEFBD5009E9944 /* RadioManagedTrackHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DDC08018BEFBD5009E9944 /* RadioManagedTrackHistory.m */; };
 		B0DDC08E18BEFBD5009E9944 /* RadioRevision.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DDC08218BEFBD5009E9944 /* RadioRevision.m */; };
 		B0E9985F18BAC2F50068191C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E9985E18BAC2F50068191C /* Cocoa.framework */; };
+		DAF56C93F3F1455AA4ECFEFA /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23EBF7E77CBB42BBB00790CE /* libPods-Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		0AB8C9D018858C8C00117769 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		0AB8C9D118858C8C00117769 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		0AB8C9D318858EAB00117769 /* Globals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Globals.h; sourceTree = "<group>"; };
+		23EBF7E77CBB42BBB00790CE /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA43C0483E5C4DED9057228A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		B007DB8518BAC6CB009B6639 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		B007DB8618BAC6CB009B6639 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -126,6 +128,7 @@
 		B0DDC08118BEFBD5009E9944 /* RadioRevision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioRevision.h; sourceTree = "<group>"; };
 		B0DDC08218BEFBD5009E9944 /* RadioRevision.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioRevision.m; sourceTree = "<group>"; };
 		B0E9985E18BAC2F50068191C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C782C806C22444B2828C825D /* Pods-Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.xcconfig"; path = "Pods/Pods-Tests.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +138,7 @@
 			files = (
 				0A229A86189A74CC006904CA /* XCTest.framework in Frameworks */,
 				0A229A87189A74CC006904CA /* Foundation.framework in Frameworks */,
+				DAF56C93F3F1455AA4ECFEFA /* libPods-Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +184,7 @@
 				0AB8C97018854D2900117769 /* Frameworks */,
 				0AB8C96F18854D2900117769 /* Products */,
 				AA43C0483E5C4DED9057228A /* Pods.xcconfig */,
+				C782C806C22444B2828C825D /* Pods-Tests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -202,6 +207,7 @@
 				0AB8C99318854D2900117769 /* XCTest.framework */,
 				0531F1C2FA124A1DA5036561 /* libPods.a */,
 				B007DB8418BAC6CB009B6639 /* Other Frameworks */,
+				23EBF7E77CBB42BBB00790CE /* libPods-Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -349,9 +355,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A229A94189A74CC006904CA /* Build configuration list for PBXNativeTarget "Tests" */;
 			buildPhases = (
+				07AB8221899740248446B130 /* Check Pods Manifest.lock */,
 				0A229A81189A74CC006904CA /* Sources */,
 				0A229A82189A74CC006904CA /* Frameworks */,
 				0A229A83189A74CC006904CA /* Resources */,
+				0A7112CEC6C84D7C8B602254 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -441,6 +449,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		07AB8221899740248446B130 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		0A229A80189A7464006904CA /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -453,6 +476,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "MODELS_DIR=\"${PROJECT_DIR}/iTunesRadioScrobble/Resources\"\nDATA_MODEL_PACKAGE=\"$MODELS_DIR/Radio.xcdatamodeld\"\nCURRENT_VERSION=`/usr/libexec/PlistBuddy \"$DATA_MODEL_PACKAGE/.xccurrentversion\" -c 'print _XCCurrentVersionName'`\nOUTPUT_DIR=\"${PROJECT_DIR}/iTunesRadioScrobble/Classes/Models\"\n/usr/local/bin/mogenerator --model \"$DATA_MODEL_PACKAGE/$CURRENT_VERSION\" --human-dir \"$OUTPUT_DIR/\" --machine-dir \"$OUTPUT_DIR/Machine/\" --template-var arc=true\n";
+		};
+		0A7112CEC6C84D7C8B602254 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		0A8C6C57189FD70600831EA8 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -606,9 +644,10 @@
 		};
 		0A229A95189A74CC006904CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C782C806C22444B2828C825D /* Pods-Tests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iTunesRadioScrobble1.app/Contents/MacOS/iTunesRadioScrobble1";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iTunesRadioScrobble.app/Contents/MacOS/iTunesRadioScrobble";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -630,9 +669,10 @@
 		};
 		0A229A96189A74CC006904CA /* Master */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C782C806C22444B2828C825D /* Pods-Tests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iTunesRadioScrobble1.app/Contents/MacOS/iTunesRadioScrobble1";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iTunesRadioScrobble.app/Contents/MacOS/iTunesRadioScrobble";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -650,9 +690,10 @@
 		};
 		0A229A97189A74CC006904CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C782C806C22444B2828C825D /* Pods-Tests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iTunesRadioScrobble1.app/Contents/MacOS/iTunesRadioScrobble1";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iTunesRadioScrobble.app/Contents/MacOS/iTunesRadioScrobble";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

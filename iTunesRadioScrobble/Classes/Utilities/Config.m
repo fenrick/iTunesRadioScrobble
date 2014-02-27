@@ -16,7 +16,9 @@
 + (Config *)sharedInstance {
     static dispatch_once_t pred;
     static Config *sharedInstance = nil;
-    dispatch_once(&pred, ^{ sharedInstance = [[self alloc] init]; });
+    dispatch_once(&pred, ^{
+        sharedInstance = [[self alloc] init];
+    });
     return sharedInstance;
 }
 

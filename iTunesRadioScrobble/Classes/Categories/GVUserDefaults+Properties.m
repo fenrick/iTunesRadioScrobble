@@ -7,14 +7,12 @@
 //
 
 
-@implementation GVUserDefaults (Properties)
+@implementation GVUserDefaults(Properties)
 
 @dynamic numberOfAppStarts;
 
 - (NSDictionary *)setupDefaults {
-    return @{
-        @"numberOfAppStarts": @0,
-    };
+    return @{@"numberOfAppStarts" : @0,};
 }
 
 - (void)increaseNumberOfAppStarts {

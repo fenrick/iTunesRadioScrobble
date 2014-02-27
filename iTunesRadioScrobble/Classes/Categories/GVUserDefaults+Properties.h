@@ -9,7 +9,7 @@
 #import <GVUserDefaults/GVUserDefaults.h>
 
 
-@interface GVUserDefaults (Properties)
+@interface GVUserDefaults(Properties)
 
 @property (nonatomic) NSInteger numberOfAppStarts;
 

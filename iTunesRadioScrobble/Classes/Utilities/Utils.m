@@ -32,7 +32,7 @@
     NSInteger hours = num_seconds / (60 * 60);
     num_seconds -= hours * (60 * 60);
     NSInteger minutes = num_seconds / 60;
-    num_seconds -= minutes*60;
+    num_seconds -= minutes * 60;
 
     if (hours) {
         return [NSString stringWithFormat:@"%02ld:%02ld:%02ld", hours, minutes, num_seconds];

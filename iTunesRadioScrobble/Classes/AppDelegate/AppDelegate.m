@@ -11,6 +11,7 @@
 #import <DDTTYLogger.h>
 #import <DDDispatchQueueLogFormatter.h>
 
+
 @implementation AppDelegate
 
 #pragma mark - App Lifecycle
@@ -50,21 +51,14 @@
 }
 
 - (void)applicationWillFinishLaunching:(NSNotification *)notification {
-    // handle queues visually better
     NSObject<DDLogFormatter> *dispatchQueueLogFormatter = [[DDDispatchQueueLogFormatter alloc] init];
-    
-    // log to stderr / tty
     [DDLog addLogger:[DDTTYLogger sharedInstance]];
     [[DDTTYLogger sharedInstance] setLogFormatter:dispatchQueueLogFormatter];
     [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
-    
-    // increment run counter
+
     [UserDefaults increaseNumberOfAppStarts];
-    
-    // setup URL caching
+
     [self setupURLCaching];
-    
-    // test internet connectivity
     [self setupReachability];
 }
 
@@ -80,7 +74,6 @@
 #pragma mark - Private methods
 
 - (void)setupURLCaching {
-        // Enable URL caching
     NSUInteger meg = 1024 * 1024;
     NSURLCache *cache = [[NSURLCache alloc] initWithMemoryCapacity:(4 * meg) diskCapacity:(32 * meg) diskPath:nil];
     [NSURLCache setSharedURLCache:cache];
@@ -94,7 +87,7 @@
             DDLogInfo(@"Reachability changed: we are online");
         }
     }];
-    
+
     [[AFNetworkReachabilityManager sharedManager] startMonitoring];
 }
 

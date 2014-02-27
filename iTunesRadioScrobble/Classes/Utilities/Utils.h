@@ -12,6 +12,7 @@
 @interface Utils : NSObject
 
 + (BOOL)isValidEmailAddress:(NSString *)emailAddress;
+
 + (NSString *)secondsToTimeString:(NSInteger)num_seconds;
 
 @end

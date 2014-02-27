@@ -6,13 +6,17 @@
 
 #import <Availability.h>
 
+
 #ifdef __OBJC__
-    #import <Cocoa/Cocoa.h>
-    #import <Foundation/Foundation.h>
-    #import <ObjectiveSugar/ObjectiveSugar.h>
-    #import "GVUserDefaults+Properties.h"
+
+#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
+#import <ObjectiveSugar/ObjectiveSugar.h>
+#import "GVUserDefaults+Properties.h"
 #import "Globals.h"
 #import <DDLog.h>
+
+
 #endif
 
 // DLog is a better NSLog

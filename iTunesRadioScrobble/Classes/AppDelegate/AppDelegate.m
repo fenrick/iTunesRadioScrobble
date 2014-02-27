@@ -8,7 +8,8 @@
 
 #import <AFNetworking/AFNetworkReachabilityManager.h>
 #import "AppDelegate.h"
-
+#import <DDTTYLogger.h>
+#import <DDDispatchQueueLogFormatter.h>
 
 @implementation AppDelegate
 
@@ -49,6 +50,13 @@
 }
 
 - (void)applicationWillFinishLaunching:(NSNotification *)notification {
+    // handle queues visually better
+    NSObject<DDLogFormatter> *dispatchQueueLogFormatter = [[DDDispatchQueueLogFormatter alloc] init];
+    
+    // log to stderr / tty
+    [DDLog addLogger:[DDTTYLogger sharedInstance]];
+    [[DDTTYLogger sharedInstance] setLogFormatter:dispatchQueueLogFormatter];
+    
     // increment run counter
     [UserDefaults increaseNumberOfAppStarts];
     

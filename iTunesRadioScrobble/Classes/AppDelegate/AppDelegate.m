@@ -1,10 +1,10 @@
-//
-//  AppDelegate.m
-//  iTunesRadioScrobble
-//
-//  Created by Jolyon Suthers on 24/02/2014.
-//  Copyright (c) 2014 Jolyon Suthers. All rights reserved.
-//
+    //
+    //  AppDelegate.m
+    //  iTunesRadioScrobble
+    //
+    //  Created by Jolyon Suthers on 24/02/2014.
+    //  Copyright (c) 2014 Jolyon Suthers. All rights reserved.
+    //
 
 #import <AFNetworking/AFNetworkReachabilityManager.h>
 #import "AppDelegate.h"
@@ -14,40 +14,48 @@
 
 #pragma mark - App Lifecycle
 
-- (BOOL)application:(NSApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [UserDefaults increaseNumberOfAppStarts];
 
-    [self setupHockey];
-    [self setupURLCaching];
-    [self setupReachability];
-
-    return YES;
+- (void)applicationDidBecomeActive:(NSNotification *)notification {
+    DDLogVerbose(@"applicationDidBecomeActive");
+    self.isInForeground = YES;
 }
 
-- (BOOL)application:(NSApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (void)applicationDidFinishLaunching:(NSNotification *)notification {
+    DDLogVerbose(@"applicationDidFinishLaunching");
     [self appStarted];
-    return YES;
-}
-							
-- (void)applicationWillResignActive:(NSApplication *)application {
-    DDLogVerbose(@"applicationWillResignActive");
 }
 
-- (void)applicationDidEnterBackground:(NSApplication *)application {
-    DDLogVerbose(@"applicationDidEnterBackground");
+- (void)applicationDidHide:(NSNotification *)notification {
+    DDLogVerbose(@"applicationDidHide");
     self.isInForeground = NO;
 }
 
-- (void)applicationWillEnterForeground:(NSApplication *)application {
-    DDLogVerbose(@"applicationWillEnterForeground");
-    [self appStarted];
+- (void)applicationDidResignActive:(NSNotification *)notification {
+    DDLogVerbose(@"applicationDidResignActive");
+    self.isInForeground = NO;
 }
 
-- (void)applicationDidBecomeActive:(NSApplication *)application {
-    DDLogVerbose(@"applicationDidBecomeActive");
+- (void)applicationDidUnhide:(NSNotification *)notification {
+    DDLogVerbose(@"applicationDidUnhide");
+    self.isInForeground = YES;
 }
 
-- (void)applicationWillTerminate:(NSApplication *)application {
+- (NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)sender {
+    return NSTerminateNow;
+}
+
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender {
+    return YES;
+}
+
+- (void)applicationWillFinishLaunching:(NSNotification *)notification {
+    [UserDefaults increaseNumberOfAppStarts];
+    
+    [self setupURLCaching];
+    [self setupReachability];
+}
+
+- (void)applicationWillTerminate:(NSNotification *)notification {
     DDLogVerbose(@"applicationWillTerminate");
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
@@ -56,36 +64,10 @@
     self.isInForeground = YES;
 }
 
-#pragma mark - State restoration
-
-- (BOOL)application:(NSApplication *)application shouldSaveApplicationState:(NSCoder *)coder {
-    return NO;
-}
-
-- (BOOL)application:(NSApplication *)application shouldRestoreApplicationState:(NSCoder *)coder {
-    return NO;
-}
-
 #pragma mark - Private methods
 
-- (void)setupHockey {
-    // HockeyApp
-#if defined (CONFIGURATION_Master)
-    [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:@"TODO" delegate:self];
-    [[BITHockeyManager sharedHockeyManager].crashManager setCrashManagerStatus:BITCrashManagerStatusAutoSend];
-    [[BITHockeyManager sharedHockeyManager] startManager];
-    [[BITHockeyManager sharedHockeyManager].authenticator authenticateInstallation];
-#endif
-
-#if defined (CONFIGURATION_Release)
-    [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:@"TODO" delegate:self];
-    [[BITHockeyManager sharedHockeyManager].crashManager setCrashManagerStatus:BITCrashManagerStatusAutoSend];
-    [[BITHockeyManager sharedHockeyManager] startManager];
-#endif
-}
-
 - (void)setupURLCaching {
-    // Enable URL caching
+        // Enable URL caching
     NSUInteger meg = 1024 * 1024;
     NSURLCache *cache = [[NSURLCache alloc] initWithMemoryCapacity:(4 * meg) diskCapacity:(32 * meg) diskPath:nil];
     [NSURLCache setSharedURLCache:cache];
@@ -99,7 +81,7 @@
             DDLogVerbose(@"Reachability changed: we are online");
         }
     }];
-
+    
     [[AFNetworkReachabilityManager sharedManager] startMonitoring];
 }
 

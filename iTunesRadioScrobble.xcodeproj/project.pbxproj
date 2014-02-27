@@ -49,6 +49,13 @@
 			remoteGlobalIDString = 0AB8C96D18854D2900117769;
 			remoteInfo = iTunesRadioScrobble;
 		};
+		B0DDC06818BEFAFC009E9944 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AB8C96618854D2900117769 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A229A7B189A7445006904CA;
+			remoteInfo = Mogenerator;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -287,7 +294,7 @@
 			);
 			name = Tests;
 			productName = Tests;
-			productReference = 0A229A85189A74CC006904CA /* Tests1.xctest */;
+			productReference = 0A229A85189A74CC006904CA /* Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		0AB8C96D18854D2900117769 /* iTunesRadioScrobble */ = {
@@ -304,6 +311,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				B0DDC06918BEFAFC009E9944 /* PBXTargetDependency */,
 			);
 			name = iTunesRadioScrobble;
 			productName = iTunesRadioScrobble;
@@ -378,7 +386,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "MODELS_DIR=\"${PROJECT_DIR}/iTunesRadioScrobble/Resources\"\nDATA_MODEL_PACKAGE=\"$MODELS_DIR/iTunesRadioScrobble.xcdatamodeld\"\nCURRENT_VERSION=`/usr/libexec/PlistBuddy \"$DATA_MODEL_PACKAGE/.xccurrentversion\" -c 'print _XCCurrentVersionName'`\nOUTPUT_DIR=\"${PROJECT_DIR}/iTunesRadioScrobble/Classes/Models\"\n/usr/local/bin/mogenerator --model \"$DATA_MODEL_PACKAGE/$CURRENT_VERSION\" --human-dir \"$OUTPUT_DIR/\" --machine-dir \"$OUTPUT_DIR/Machine/\" --template-var arc=true\n";
+			shellScript = "MODELS_DIR=\"${PROJECT_DIR}/iTunesRadioScrobble/Resources\"\nDATA_MODEL_PACKAGE=\"$MODELS_DIR/Radio.xcdatamodeld\"\nCURRENT_VERSION=`/usr/libexec/PlistBuddy \"$DATA_MODEL_PACKAGE/.xccurrentversion\" -c 'print _XCCurrentVersionName'`\nOUTPUT_DIR=\"${PROJECT_DIR}/iTunesRadioScrobble/Classes/Models\"\n/usr/local/bin/mogenerator --model \"$DATA_MODEL_PACKAGE/$CURRENT_VERSION\" --human-dir \"$OUTPUT_DIR/\" --machine-dir \"$OUTPUT_DIR/Machine/\" --template-var arc=true\n";
 		};
 		0A8C6C57189FD70600831EA8 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -453,6 +461,11 @@
 			isa = PBXTargetDependency;
 			target = 0AB8C96D18854D2900117769 /* iTunesRadioScrobble */;
 			targetProxy = 0A229A92189A74CC006904CA /* PBXContainerItemProxy */;
+		};
+		B0DDC06918BEFAFC009E9944 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A229A7B189A7445006904CA /* Mogenerator */;
+			targetProxy = B0DDC06818BEFAFC009E9944 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

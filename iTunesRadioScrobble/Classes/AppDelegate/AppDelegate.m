@@ -56,6 +56,7 @@
     // log to stderr / tty
     [DDLog addLogger:[DDTTYLogger sharedInstance]];
     [[DDTTYLogger sharedInstance] setLogFormatter:dispatchQueueLogFormatter];
+    [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
     
     // increment run counter
     [UserDefaults increaseNumberOfAppStarts];

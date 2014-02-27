@@ -100,7 +100,7 @@
 		B007DB9218BAC6CC009B6639 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		B007DB9818BAC6CC009B6639 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		B061FD6F18ADD63C0002CF2D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		B0DDC06618BEFA1D009E9944 /* Radio.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Radio.xcdatamodel; sourceTree = "<group>"; };
+		B0DDC06618BEFA1D009E9944 /* Radio9.1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Radio9.1.xcdatamodel; sourceTree = "<group>"; };
 		B0DDC06B18BEFBD5009E9944 /* _RadioManagedAudioClip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _RadioManagedAudioClip.h; sourceTree = "<group>"; };
 		B0DDC06C18BEFBD5009E9944 /* _RadioManagedAudioClip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _RadioManagedAudioClip.m; sourceTree = "<group>"; };
 		B0DDC06D18BEFBD5009E9944 /* _RadioManagedSkipHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _RadioManagedSkipHistory.h; sourceTree = "<group>"; };
@@ -859,9 +859,9 @@
 		B0DDC06518BEFA1D009E9944 /* Radio.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				B0DDC06618BEFA1D009E9944 /* Radio.xcdatamodel */,
+				B0DDC06618BEFA1D009E9944 /* Radio9.1.xcdatamodel */,
 			);
-			currentVersion = B0DDC06618BEFA1D009E9944 /* Radio.xcdatamodel */;
+			currentVersion = B0DDC06618BEFA1D009E9944 /* Radio9.1.xcdatamodel */;
 			path = Radio.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

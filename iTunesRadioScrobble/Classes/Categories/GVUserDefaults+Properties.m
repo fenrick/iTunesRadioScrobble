@@ -6,8 +6,6 @@
 //  Copyright (c) 2014 Jolyon Suthers. All rights reserved.
 //
 
-#import "GVUserDefaults+Properties.h"
-
 
 @implementation GVUserDefaults (Properties)
 

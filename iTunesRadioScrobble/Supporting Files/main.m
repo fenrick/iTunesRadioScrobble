@@ -6,7 +6,6 @@
 //  Copyright (c) 2014 Jolyon Suthers. All rights reserved.
 //
 
-#import "AppDelegate.h"
 
 int main(int argc, const char *argv[]) {
     return NSApplicationMain(argc, argv);

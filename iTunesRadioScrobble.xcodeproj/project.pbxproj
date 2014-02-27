@@ -61,7 +61,7 @@
 
 /* Begin PBXFileReference section */
 		0531F1C2FA124A1DA5036561 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A229A85189A74CC006904CA /* Tests1.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests1.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A229A85189A74CC006904CA /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A229A8B189A74CC006904CA /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		0A229A8D189A74CC006904CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0A229A8F189A74CC006904CA /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
@@ -154,7 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				0AB8C96E18854D2900117769 /* iTunesRadioScrobble.app */,
-				0A229A85189A74CC006904CA /* Tests1.xctest */,
+				0A229A85189A74CC006904CA /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";

@@ -28,9 +28,6 @@ PODS:
     - MagicalRecord/Core
   - MagicalRecord/Core (2.2)
   - ObjectiveSugar (1.1.0)
-  - RemoteConfig (1.5.0):
-    - XMLReader
-  - XMLReader (0.0.2)
 
 DEPENDENCIES:
   - AFNetworking
@@ -40,7 +37,6 @@ DEPENDENCIES:
   - LastFm
   - MagicalRecord
   - ObjectiveSugar
-  - RemoteConfig
 
 SPEC CHECKSUMS:
   AFNetworking: e8cfd8f3fe3bfe19124a0cc63f4d45752d892a56
@@ -50,7 +46,5 @@ SPEC CHECKSUMS:
   LastFm: f474e3d5a6119cda5a338d028420ad69a908deab
   MagicalRecord: 95d49d74ef752cd52f6ad87bcb474817fc3978cf
   ObjectiveSugar: fed588577bcf9733546aeaa089de444e4bab9a52
-  RemoteConfig: 41692948095483e95213b49d7e53f5d927158793
-  XMLReader: d8a522b0362140b328bcaec7f289ff4ffffebf29
 
 COCOAPODS: 0.29.0

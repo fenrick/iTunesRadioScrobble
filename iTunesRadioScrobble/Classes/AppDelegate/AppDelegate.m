@@ -64,6 +64,7 @@
 
 - (void)applicationWillTerminate:(NSNotification *)notification {
     DDLogVerbose(@"applicationWillTerminate");
+    [[AFNetworkReachabilityManager sharedManager] stopMonitoring];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 

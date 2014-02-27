@@ -76,9 +76,9 @@
 - (void)setupReachability {
     [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
         if (status == AFNetworkReachabilityStatusNotReachable) {
-            DDLogVerbose(@"Reachability changed: we are offline");
+            DDLogInfo(@"Reachability changed: we are offline");
         } else {
-            DDLogVerbose(@"Reachability changed: we are online");
+            DDLogInfo(@"Reachability changed: we are online");
         }
     }];
     

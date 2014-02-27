@@ -17,7 +17,7 @@
 
 // DLog is a better NSLog
 #if defined (CONFIGURATION_Release)
-static const int ddLogLevel = LOG_LEVEL_ERROR;
+static const int ddLogLevel = LOG_LEVEL_WARN;
 #else
 static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 #endif

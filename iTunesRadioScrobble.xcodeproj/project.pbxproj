@@ -38,6 +38,7 @@
 		B00071E018BACAA600BB0C19 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B007DB8B18BAC6CC009B6639 /* InfoPlist.strings */; };
 		B00071E118BACAA600BB0C19 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B007DB9118BAC6CC009B6639 /* Credits.rtf */; };
 		B061FD7018ADD63C0002CF2D /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B061FD6F18ADD63C0002CF2D /* AppKit.framework */; };
+		B0DDC06718BEFA1D009E9944 /* Radio.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B0DDC06518BEFA1D009E9944 /* Radio.xcdatamodeld */; };
 		B0E9985F18BAC2F50068191C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E9985E18BAC2F50068191C /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +91,7 @@
 		B007DB9218BAC6CC009B6639 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		B007DB9818BAC6CC009B6639 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		B061FD6F18ADD63C0002CF2D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		B0DDC06618BEFA1D009E9944 /* Radio.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Radio.xcdatamodel; sourceTree = "<group>"; };
 		B0E9985E18BAC2F50068191C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -252,6 +254,7 @@
 				B007DB9118BAC6CC009B6639 /* Credits.rtf */,
 				B007DB9718BAC6CC009B6639 /* MainMenu.xib */,
 				0AB8C9B618854E2700117769 /* Images.xcassets */,
+				B0DDC06518BEFA1D009E9944 /* Radio.xcdatamodeld */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AB8C9C418854E2700117769 /* main.m in Sources */,
+				B0DDC06718BEFA1D009E9944 /* Radio.xcdatamodeld in Sources */,
 				0AB8C9CA18854ED600117769 /* Config.m in Sources */,
 				0AB8C9D218858C8C00117769 /* Utils.m in Sources */,
 				0AB8C9BF18854E2700117769 /* AppDelegate.m in Sources */,
@@ -776,6 +780,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B0DDC06518BEFA1D009E9944 /* Radio.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B0DDC06618BEFA1D009E9944 /* Radio.xcdatamodel */,
+			);
+			currentVersion = B0DDC06618BEFA1D009E9944 /* Radio.xcdatamodel */;
+			path = Radio.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0AB8C96618854D2900117769 /* Project object */;
 }
